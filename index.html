@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Driving Cars - The Future of Transportation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border-bottom: 3px solid transparent;
+            display: block;
+        }
+
+        nav a:hover {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        nav a:focus {
+            border-bottom-color: #667eea;
+            color: #667eea;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 80px;
+        }
+
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e0e0e0;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: #666;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .logo-container img {
+            max-width: 300px;
+            height: auto;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Self-Driving Cars 🚗</h1>
+        <p>The Future of Transportation Technology</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#what">What They Are</a></li>
+            <li><a href="#problems">Problems Addressed</a></li>
+            <li><a href="#how">How They Work</a></li>
+            <li><a href="#applications">Applications</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>The Revolution in Transportation</h2>
+            <p>Autonomous vehicles, commonly known as self-driving cars, represent one of the most transformative technologies of our time. These vehicles use advanced artificial intelligence, sensors, and computer vision to navigate roads without human intervention. From reducing accidents to improving traffic flow, self-driving cars promise to revolutionize how we move from place to place.</p>
+            <div class="image-container">
+                <img src="Images/self driving car.jpg" alt="Self-driving car on the road">
+            </div>
+        </section>
+
+        <section id="what">
+            <h2>What Are Self-Driving Cars?</h2>
+            <p>Self-driving cars, also called autonomous vehicles (AVs), are vehicles capable of perceiving their environment and operating safely with little or no human input. They use a combination of technologies including:</p>
+            <ul style="margin-left: 2rem; margin-top: 1rem; line-height: 2;">
+                <li><strong>LiDAR sensors</strong> - Create detailed 3D maps of the environment</li>
+                <li><strong>Cameras and radar</strong> - Detect objects, pedestrians, and traffic signals</li>
+                <li><strong>GPS and mapping</strong> - Determine location and planned routes</li>
+                <li><strong>Artificial Intelligence</strong> - Processes sensor data and makes driving decisions</li>
+                <li><strong>Edge computing</strong> - Real-time processing for quick reactions</li>
+            </ul>
+            <p style="margin-top: 1rem;">Autonomous vehicles come in different levels of automation, ranging from Level 0 (no automation) to Level 5 (full automation in all conditions).</p>
+        </section>
+
+        <section id="problems">
+            <h2>Problems They Address</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🚨 Road Safety</h3>
+                    <p>Over 94% of accidents are due to human error. Self-driving cars can dramatically reduce fatalities and injuries.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🚗 Traffic Congestion</h3>
+                    <p>Autonomous vehicles optimize driving patterns and reduce traffic jams by improving flow and eliminating inefficient braking.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>♿ Accessibility</h3>
+                    <p>People with disabilities, elderly, and those without driving licenses gain independence and mobility.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🌍 Environmental Impact</h3>
+                    <p>Optimized routes and electric powertrains reduce fuel consumption and carbon emissions significantly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how">
+            <h2>How Self-Driving Cars Work</h2>
+            <p>Autonomous vehicles operate through a sophisticated process:</p>
+            <ol style="margin-left: 2rem; margin-top: 1rem; line-height: 2;">
+                <li><strong>Perception</strong> - Sensors collect data about the environment (objects, lane markings, signals)</li>
+                <li><strong>Localization</strong> - The vehicle determines its precise location using GPS and map matching</li>
+                <li><strong>Prediction</strong> - AI predicts the behavior of other road users (cars, pedestrians, cyclists)</li>
+                <li><strong>Planning</strong> - The system plans a safe route and acceleration/braking strategy</li>
+                <li><strong>Control</strong> - The vehicle sends commands to steering, acceleration, and braking systems</li>
+            </ol>
+            <p style="margin-top: 1rem;">This cycle happens hundreds of times per second, allowing the vehicle to react to changing road conditions in real-time.</p>
+        </section>
+
+        <section id="applications">
+            <h2>Real-World Applications</h2>
+            <div class="logo-container">
+                <img src="Images/tesla logo.png" alt="Tesla logo - autonomous vehicle leader">
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🚕 Ride-Sharing & Taxis</h3>
+                    <p>Companies like Waymo and Cruise operate autonomous taxi services in major cities worldwide.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🚚 Freight & Delivery</h3>
+                    <p>Self-driving trucks reduce transportation costs and enable long-haul routes without driver fatigue.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🏢 Last-Mile Delivery</h3>
+                    <p>Autonomous delivery robots handle package distribution in urban and suburban areas.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🚌 Public Transit</h3>
+                    <p>Autonomous buses improve efficiency of public transportation systems and reduce operating costs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Furquan Sajid</p>
+        <p>ICD20 2026</p>
+    </footer>
+</body>
+</html>

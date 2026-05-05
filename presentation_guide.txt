@@ -1,0 +1,50 @@
+SELF-DRIVING CARS WEBSITE - PRESENTATION GUIDE
+
+OPENING:
+- Welcome audience and introduce autonomous vehicles as the future of transportation
+- This covers what they are, problems they solve, how they work, and real applications
+- Mention this technology is already being tested and used today
+
+WHAT THEY ARE:
+- Define AVs: vehicles that operate safely with little to no human input
+- Key technologies: LiDAR sensors, cameras, radar, AI, GPS mapping, edge computing
+- Explain the 5 automation levels from Level 0 (no automation) to Level 5 (full automation)
+- We're currently at Level 2-4 with companies actively developing Level 5
+
+PROBLEMS ADDRESSED:
+- Road Safety: 94% of accidents are human error - AVs eliminate this
+- Traffic Congestion: Optimized driving patterns and better coordination
+- Accessibility: Independence for disabled, elderly, and those without licenses
+- Environmental Impact: Electric vehicles with optimized routes reduce emissions
+
+HOW THEY WORK:
+- 5-step cycle that repeats hundreds of times per second:
+  1. Perception (sensors gather data)
+  2. Localization (GPS determines location)
+  3. Prediction (AI predicts other road users' behavior)
+  4. Planning (decides safest route and actions)
+  5. Control (executes steering, acceleration, braking)
+- Emphasize the speed allows faster reactions than humans
+
+REAL-WORLD APPLICATIONS:
+- Ride-Sharing & Taxis: Waymo and Cruise operating autonomous taxi services
+- Freight & Delivery: Self-driving trucks for long hauls, cost reduction
+- Last-Mile Delivery: Autonomous robots for package delivery
+- Public Transit: Autonomous buses for efficiency and reduced costs
+
+CLOSING:
+- Summarize the transformative impact of autonomous vehicles
+- Mention this is already happening, not just future technology
+- Note challenges: regulation, cybersecurity, public acceptance
+- Entire presentation is in ONE HTML file - easy to share and modify
+- Open for questions and discussion
+
+---
+
+HTML TAGS USED IN THIS WEBSITE:
+
+1. <section> - Organizes content into logical parts (What They Are, Problems, etc.)
+2. <button> - Interactive element for user clicks
+3. <img> - Displays images (self-driving car and Tesla logo)
+4. <div> - Container for grouping content together and styling
+
